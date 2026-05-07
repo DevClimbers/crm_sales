@@ -1,0 +1,66 @@
+# Env y secretos
+.env
+.env.local
+.env.*.local
+
+# Ruby / Rails
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+.bundle/
+vendor/bundle
+log/*.log
+tmp/
+*.swp
+*~
+.byebug_history
+.ruby-version
+
+# Base de datos
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-shm
+/db/*.sqlite3-wal
+
+# Assets compilados
+/public/assets
+/public/packs
+/public/packs-test
+node_modules/
+yarn-error.log
+.yarn-integrity
+
+# Sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.orig
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sidekiq
+/sidekiq.pid
+
+# OMC runtime state (sesiones y estado de agentes)
+.omc/sessions/
+.omc/state/
+.agents/
+
+# Credenciales Rails (si se usan)
+/config/credentials.yml.enc
+/config/master.key
