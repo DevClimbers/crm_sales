@@ -14,7 +14,7 @@ CRM web construido en Ruby on Rails que usa agentes de IA para descubrir prospec
 
 | Capa | Tecnología |
 |---|---|
-| Framework | Ruby on Rails 7.2 |
+| Framework | Ruby on Rails 8.1 |
 | Frontend | Hotwire (Turbo + Stimulus) + Tailwind CSS |
 | Base de datos | PostgreSQL |
 | Jobs | Sidekiq + Redis |
@@ -46,6 +46,9 @@ bundle install
 cp .env.example .env
 # Editar .env con tus credenciales
 
+# Instalar Tailwind CSS
+rails tailwindcss:install
+
 # Crear y migrar la base de datos
 rails db:create db:migrate db:seed
 
@@ -68,14 +71,12 @@ GOOGLE_PAGESPEED_API_KEY= # Opcional — funciona sin key con cuota reducida
 ### Iniciar servicios
 
 ```bash
-# Terminal 1: Rails server
-rails server
+# Terminal 1: Rails server + Tailwind watcher
+bin/dev
 
 # Terminal 2: Sidekiq (jobs en background)
 bundle exec sidekiq -C config/sidekiq.yml
 ```
-
-O usar `bin/dev` con Procfile si está configurado Foreman.
 
 ## Uso
 

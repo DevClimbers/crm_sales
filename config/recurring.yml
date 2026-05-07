@@ -1,0 +1,2 @@
+# Sidekiq-cron jobs are configured in config/initializers/sidekiq.rb
+# This file is kept for reference only and is not used.
